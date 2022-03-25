@@ -1,0 +1,20 @@
+演示python中pymysql模块的使用流程
+流程
+1.下载pymysql这个包
+···使用pip或者直接在pycharm中下载这个包
+2.导入pymysql包
+...import pymysql
+3.创建连接
+conn=pymysql.conn
+4.创建游标,传递命令，返回值类型（元组）
+....cursor=conn.cursor
+5.执行sql语句
+....cursor.方法
+---------创建数据库、查询数据库、创建表、插入数据
+6.提交事务
+....conn.commit
+7.释放游标
+...cursor.close()
+8关闭连接
+....conn.close()
+9.数据处理（输出方式/或者不显示）
